@@ -16,9 +16,6 @@ body {
     max-width: 1520px;
     margin: 0 auto;
 }
-.right {
-    height: 3000px;
-}
 .aside {
     width: 122px;
     border-right: 1px solid #CCCDD0;
@@ -30,12 +27,8 @@ body {
     box-sizing: border-box;
     padding-left: 22px;
     border-right: 1px solid #CCCDD0;
+} */
 
-} */
-/* .body-flex {
-    display: flex;
-    min-height: 1500px;
-} */
 .cosial {
     display: flex;
     flex-direction: column;
@@ -96,6 +89,7 @@ section {
     color: #FFFFFF;
 }
 .articles {
+    margin-bottom: 200px;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -143,6 +137,8 @@ section {
     flex-basis: 63%;
 }
 .arrow-left {
+    background-color: transparent;
+    border: none;
     display: block;
     height: 83px;
     width: 83px;
@@ -155,6 +151,8 @@ section {
     margin-left: 200px;
 }
 .arrow-right {
+    background-color: transparent;
+    border: none;
     display: block;
     height: 83px;
     width: 83px;
