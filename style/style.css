@@ -6,6 +6,7 @@ body {
     color: #CCCDD0;
     /* border:#FF0 dashed 1px; */
     position: relative;
+    background-color: black;
 }
 .header {
     display: flex;
@@ -92,6 +93,8 @@ section {
     margin-bottom: 200px;
     font-weight: bold;
     text-transform: uppercase;
+    overflow: hidden;
+    height: 600px;
 }
 .articles-title {
     font-size: 110px;
@@ -132,6 +135,8 @@ section {
     gap: 30px;
     overflow-x: scroll;
     overflow-y: hidden;
+    padding-bottom: 136px;
+    width: auto;
 }
 .articles-left {
     flex-basis: 63%;
@@ -147,9 +152,7 @@ section {
     left: 0;
     background-image: url(../image/left_arrow.svg);
 }
-.wrap {
-    margin-left: 200px;
-}
+
 .arrow-right {
     background-color: transparent;
     border: none;
@@ -192,6 +195,9 @@ section {
     .container {
         padding-left: 0px;
         padding-right: 0px;
+    }
+    .wrap {
+        margin-left: 200px;
     }
 }
         
