@@ -148,7 +148,7 @@ section {
     height: 83px;
     width: 83px;
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 0;
     background-image: url(../image/left_arrow.svg);
 }
@@ -162,7 +162,7 @@ section {
     position: absolute;
     background-image: url(../image/left_arrow.svg);
     transform: rotate(180deg);
-    top: 50%;
+    top: 25%;
     right: 40px;
 }
 .slide1-img {
