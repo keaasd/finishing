@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script defer src="js/js.js"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet"> 
     <title>Document</title>
@@ -18,7 +19,7 @@
         <div class="header-box">
             <div class="logo" src="image/burger.svg" alt=""></div>
             <button onclick="openModal()" class="header-burger-menu"></button>
-            <nav>
+            <nav> 
                 <ul class="header-list">
                     <li class="header-item">
                         <a href="#" class="header-link">Портфолио</a>
@@ -155,7 +156,7 @@
                             <p class="country"> Малага <span class="malaga">|</span> Марбелья</p>
                         </div>
                         <div class="copyright">
-                            <a class="copy" href="#" target="_blank" rel="noopener noreferrer">Политика конфиденциальности</span>
+                            <a class="copy" href="#" target="_blank" rel="noopener noreferrer">Политика конфиденциальности</a>
                             <span>&copy; Reforma master, 2022</span>
                         </div>
                     </div>
@@ -163,24 +164,30 @@
             </footer>
     </div>
     <!-- burger  -->
-    <div class="burger-menu">
-        <button onclick="cloceModal()" class="burger-cloce">+</button>
-    
-    <ul class="header-list-moby">
-        <li class="header-item">
-            <a href="#" class="header-link">Портфолио</a>
-        </li>
-        <li class="header-item">
-            <a href="#" class="header-link">Дизайн-проекты</a>
-        </li>
-        <li class="header-item">
-            <a href="#" class="header-link">Статьи</a>
-        </li>
-        <li class="header-item">
-            <a href="#" class="header-link">Контакты</a>
-        </li>
-    </ul> 
+    <div class="modal" id="modal">
+        <div class="burger-menu">
+            <div class="burger-menu-box">
+                <div class="logo logo-burger"></div>
+                <button onclick="closeModal()" class="burger-cloce">+</button>
+            </div>
+            
+        
+        <ul class="header-list-moby">
+            <li class="modal-item">
+                <a href="#" class="header-link modal-link">Портфолио</a>
+            </li>
+            <li class="modal-item">
+                <a href="#" class="header-link modal-link">Дизайн-проекты</a>
+            </li>
+            <li class="modal-item">
+                <a href="#" class="header-link modal-link">Статьи</a>
+            </li>
+            <li class="modal-item">
+                <a href="#" class="header-link modal-link">Контакты</a>
+            </li>
+        </ul> 
 
+        </div>
     </div>  
 </body>
 </html>
