@@ -13,9 +13,51 @@
     <title>Document</title>
 </head>
 <body class="black-bg">
+    <div class="stripe"></div>
+    <header class="header">
+        <div class="header-box">
+            <div class="logo" src="image/burger.svg" alt=""></div>
+            <button onclick="openModal()" class="header-burger-menu"></button>
+            <nav>
+                <ul class="header-list">
+                    <li class="header-item">
+                        <a href="#" class="header-link">Портфолио</a>
+                    </li>
+                    <li class="header-item">
+                        <a href="#" class="header-link">Дизайн-проекты</a>
+                    </li>
+                    <li class="header-item">
+                        <a href="#" class="header-link">Статьи</a>
+                    </li>
+                    <li class="header-item">
+                        <a href="#" class="header-link">Контакты</a>
+                    </li>
+                </ul>                
+            </nav>
+            <a class="header-tel" href="tel:+34688272283">+34-688-272-283</a>
+            
+        </div>
+        <div class="count-box">
+            <!-- mobile -->
+            <a class="header-tel-moby" href="tel:+34688272283"></a>            
+            <button class="header-language"></button>
+            <!-- desctop -->
+            <ul class="count-list">
+                <li class="count-item">
+                    <button class="count-btn en">Английский</button>
+                </li>
+                <li class="count-item">
+                    <button class="count-btn es">Испанский</button>
+                </li>
+                <li class="count-item">
+                    <button class="count-btn ru">Русский</button>
+                </li>
+            </ul>
+        </div>
+    </header>
     <div class="stripes">
-        <div class="stripe"></div>
-    <!-- <header class="header"></header> -->
+        
+    
             <!-- <aside class="aside-left">
             <ul class="cosial">
                 <li class="cosial-item">1</li>
@@ -40,19 +82,33 @@
                             <button class="articles-btn">Все статьи</button>
                             
                         </div>
-                        <div class="articles-slider">
-                            <button class="arrow-left"></button>
-                            <button class="arrow-right"></button>
-                            <div class="slide1">
-                                <img class="slide1-img" src="image/slide1.jpg" alt="slide1">
-                                <p class="slide1-description">Почему для хорошей отделки 
-                                    нужен дизайн-проект?</p>
-                            </div>
-                            <!-- slider2  -->
-                            <div class="slide1">
-                                <img class="slide2-img" src="image/slide2.jpg" alt="slide1">
-                                <p class="slide1-description not-activ">Почему для хорошей отделки 
-                                    нужен дизайн-проект?</p>
+                        <div class="articles-slider-box">
+                            <div class="articles-slider">
+                                <button class="arrow-left"></button>
+                                <button class="arrow-right"></button>
+                                <div class="slide1">
+                                    <img class="slide1-img" src="image/slide1.jpg" alt="slide1">
+                                    <p class="slide1-description">Почему для хорошей отделки 
+                                        нужен дизайн-проект?</p>
+                                </div>
+                                <!-- slider2  -->
+                                <div class="slide1">
+                                    <img class="slide1-img" src="image/slide2.jpg" alt="slide1">
+                                    <p class="slide1-description not-activ">Преимущества безвоздушной
+                                        покраски</p>
+                                </div>
+                                <!-- slider2  -->
+                                <div class="slide1">
+                                    <img class="slide1-img" src="image/slide2.jpg" alt="slide1">
+                                    <p class="slide1-description not-activ">Преимущества безвоздушной
+                                        покраски</p>
+                                </div>
+                                <!-- slider2  -->
+                                <div class="slide1">
+                                    <img class="slide1-img" src="image/slide2.jpg" alt="slide1">
+                                    <p class="slide1-description not-activ">Почему для хорошей отделки 
+                                        нужен дизайн-проект?</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -72,10 +128,10 @@
                         <div class="contact-flex">
                             <input class="contact-input" type="tel" name="tel"  placeholder="Номер телефона" required>
                             <button class="btn" name="tel" type="submit">Заказать</button>
-                        </div>
-                        <div class="contact-checks">                            
-                            <input class="contact-checkbox" type="checkbox" name="" id="telefon" required>
-                            <label class="contact-label" for="telefon">Согласен с политикой обработки <a class="link" href="#" target="_blank" rel="noopener noreferrer"> персональных данных</a></label>
+                            <div class="contact-checks">                            
+                                <input class="contact-checkbox" type="checkbox" name="" id="telefon" required>
+                                <label class="contact-label" for="telefon">Согласен с политикой обработки <a class="link" href="#" target="_blank" rel="noopener noreferrer"> персональных данных</a></label>
+                            </div>
                         </div>
                     </form>
                     <ul class="contact-coutry">
@@ -99,12 +155,32 @@
                             <p class="country"> Малага <span class="malaga">|</span> Марбелья</p>
                         </div>
                         <div class="copyright">
-                            <span class="copy">Политика конфиденциальности</span>
+                            <a class="copy" href="#" target="_blank" rel="noopener noreferrer">Политика конфиденциальности</span>
                             <span>&copy; Reforma master, 2022</span>
                         </div>
                     </div>
                 </div>
             </footer>
     </div>
+    <!-- burger  -->
+    <div class="burger-menu">
+        <button onclick="cloceModal()" class="burger-cloce">+</button>
+    
+    <ul class="header-list-moby">
+        <li class="header-item">
+            <a href="#" class="header-link">Портфолио</a>
+        </li>
+        <li class="header-item">
+            <a href="#" class="header-link">Дизайн-проекты</a>
+        </li>
+        <li class="header-item">
+            <a href="#" class="header-link">Статьи</a>
+        </li>
+        <li class="header-item">
+            <a href="#" class="header-link">Контакты</a>
+        </li>
+    </ul> 
+
+    </div>  
 </body>
 </html>
